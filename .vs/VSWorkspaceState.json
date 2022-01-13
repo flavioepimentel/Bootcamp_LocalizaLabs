@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\DIO.Series",
+    "\\DIO.Series\\Classes",
+    "\\DIO.Series\\Enum",
+    "\\DIO.Series\\Interfaces",
+    "\\DIO.Series\\obj\\Debug\\net5.0",
+    "\\DIO.Series\\obj\\Debug\\net5.0\\ref",
+    "\\DIO.Series\\obj\\Release",
+    "\\DIO.Series\\obj\\Release\\net5.0",
+    "\\DIO.Series\\obj\\Release\\net5.0\\ref"
+  ],
+  "SelectedNode": "\\DIO.Series\\Program.cs",
+  "PreviewInSolutionExplorer": false
+}
