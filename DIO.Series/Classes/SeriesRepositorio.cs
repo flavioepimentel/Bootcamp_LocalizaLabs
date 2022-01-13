@@ -6,20 +6,33 @@ namespace DIO.Series
 {
     public class SerieRepositorio : IRepositorio<Serie>
     {
-        //1-Definindo
+        // Listando todas as Series
         private List<Series> listaSerie = new List<Series>();
-        
-        public void Atualiza(int id, Series objeto)
+
+        // Implementações dos Repositórios 
+        public void Atualiza(int id, Series entidade)
         {
-            listaSerie[id] = objeto;
-
+            listaSerie[id] = entidade;
         }
-
         public void Exclui(int id)
         {
-            listaSerie.RemoveAt(id)
+            listaSerie[id].Excluir();
         }
-
-        public void Insere(Serie)
+        public void Insere(Series entidade)
+        {
+            listaSerie.Add(entidade);
+        }
+        public List<Series> Lista()
+        {
+            return listaSerie;
+        }
+        public int ProximoId()
+        {
+            return listaSerie.Count;
+        }
+        public Series RetornaPorId(int id)
+        {
+            return listaSerie[id];
+        }
     }
 }

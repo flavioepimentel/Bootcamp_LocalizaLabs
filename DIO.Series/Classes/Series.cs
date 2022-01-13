@@ -6,7 +6,7 @@ namespace DIO.Series
     public class Series : EntidadeBase
     {
         private Genero genero;
-
+        // ATRIBUTOS
         //genero titulo descricao ano
         private Genero Genero { get => genero; set => genero = value; }
         private string Titulo { get; set; }
@@ -14,6 +14,7 @@ namespace DIO.Series
         private int Ano { get; set; }
         private bool Excluido { get; set; }
 
+        // MÉTODODS
         public Series(int id, Genero genero, string titulo, string descricao, int ano)
         {
             this.Id = id;
@@ -45,12 +46,6 @@ namespace DIO.Series
             return this.Id;
         }
 
-        public bool Excluir()
-        {
-            this.Excluido = true;
-        }
-
-
     
         private string GetDebuggerDisplay()
         {
@@ -58,3 +53,4 @@ namespace DIO.Series
         }
     }
 }
+
