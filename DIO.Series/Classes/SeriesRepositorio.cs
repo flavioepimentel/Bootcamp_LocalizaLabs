@@ -4,16 +4,17 @@ using DIO.Series.Interfaces;
 
 namespace DIO.Series
 {
-    public class SerieRepositorio : IRepositorio<Serie>
+    public class SerieRepositorio : IRepositorio<Series>
     {
         // Listando todas as Series
         private List<Series> listaSerie = new List<Series>();
 
-        // Implementações dos Repositórios 
+        // Implementaï¿½ï¿½es dos Repositï¿½rios 
         public void Atualiza(int id, Series entidade)
         {
             listaSerie[id] = entidade;
         }
+
         public void Exclui(int id)
         {
             listaSerie[id].Excluir();
@@ -22,6 +23,7 @@ namespace DIO.Series
         {
             listaSerie.Add(entidade);
         }
+
         public List<Series> Lista()
         {
             return listaSerie;
@@ -33,6 +35,16 @@ namespace DIO.Series
         public Series RetornaPorId(int id)
         {
             return listaSerie[id];
+        }
+
+        List<Series> IRepositorio<Series>.Lista()
+        {
+            return listaSerie;
+        }
+
+        Series IRepositorio<Series>.RetornaPorId(int id)
+        {
+           return listaSerie[id];
         }
     }
 }

@@ -1,11 +1,15 @@
+using System;
 using System.Diagnostics;
 
 namespace DIO.Series
 {
-    [DebuggerDisplay($"{{{nameof(GetDebuggerDisplay())}(),nq}}")]
+   
     public class Series : EntidadeBase
     {
         private Genero genero;
+
+        public int Id { get; }
+
         // ATRIBUTOS
         //genero titulo descricao ano
         private Genero Genero { get => genero; set => genero = value; }
@@ -14,7 +18,9 @@ namespace DIO.Series
         private int Ano { get; set; }
         private bool Excluido { get; set; }
 
-        // MÉTODODS
+
+
+        // Mï¿½TODODS
         public Series(int id, Genero genero, string titulo, string descricao, int ano)
         {
             this.Id = id;
@@ -29,11 +35,11 @@ namespace DIO.Series
         public override string ToString()
         {
             string retorno = "";
-            retorno += "Gênero" + this.Genero + Environment.NewLine;
+            retorno += "Genero" + this.Genero + Environment.NewLine;
             retorno += "Titulo" + this.Titulo + Environment.NewLine;
-            retorno += "Descrição" + this.Descricao + Environment.NewLine;
+            retorno += "Descricao" + this.Descricao + Environment.NewLine;
             retorno += "Ano" + this.Ano + Environment.NewLine;
-            return retorno
+            return retorno;
         }
 
         public string retornaTitulo()
@@ -46,7 +52,16 @@ namespace DIO.Series
             return this.Id;
         }
 
-    
+        public void Excluir()
+        {
+            this.Excluido = true;
+        }
+
+        public bool retornaExcluido(){
+            return this.Excluido;
+        }
+
+
         private string GetDebuggerDisplay()
         {
             return ToString();

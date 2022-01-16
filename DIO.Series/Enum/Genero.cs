@@ -2,22 +2,21 @@ namespace DIO.Series
 {
     public enum Genero
     {
-        Ação = 1,
-        Aventura = 1,
-        Romance = 1,
-        Comédia = 1,
-        Terror = 1,
-        Fantasia = 1,
-        Policial = 1,
-        Aventura = 1,
-        Faroeste = 1,
-        Sci-fy = 1,
-        Espionagem = 1,
-        Documentário = 1,
-        Musical = 1,
-        Desenho Animado = 1,
-        Guerra = 1,
+        Acao = 1,
+        Aventura = 2,
+        Romance = 3,
+        Comedia = 4,
+        Terror = 5,
+        Fantasia = 6,
+        Policial = 7,
+        Faroeste = 8,
+        Scify = 9,
+        Espionagem = 10,
+        Documentario = 11,
+        Musical = 12,
+        Infantil = 13,
+        Guerra = 14,
 
 
-    }
+    };
 }
