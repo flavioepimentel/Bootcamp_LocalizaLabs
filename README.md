@@ -6,9 +6,10 @@ Sistema de controle de titulos de filmes e séries. Permite Criar novos registro
 
 ## Ambiente
 
-``SDK .NET 5.0.402``
+``.NET 5.0 SDK``
 
 ### Estrutura de dados
+
 | Variavel | Formato | Metodo |
 |----------|---------|--------|
 | Id | int | get |
