@@ -23,14 +23,14 @@ Sistema de controle de titulos de filmes e séries. Permite Criar novos registro
   Após o start da aplicação o resultado esperado é a exibição do menu abaixo. A base de dados da aplicação iniciada não esta conectada a um serviço de banco de dados e será iniciada vazia, então para selecionar a opção 1, 3 e 5 sem receber uma mensagem de erro é necessário inserir um novo dado no sistema.
 
 ```
-			Stream DIO
-			===================
-			1 - Listar titulos
-			2 - Inserir novos titulos
-			3 - Atualizar titulo
-			4 - Excluir titulo
-			5 - Visualizar titulos disponíveis
-			X - Sair
+Stream DIO
+===================
+1 - Listar titulos
+2 - Inserir novos titulos
+3 - Atualizar titulo
+4 - Excluir titulo
+5 - Visualizar titulos disponíveis
+X - Sair
 ```
 
 ### Criando novo dado
@@ -99,6 +99,7 @@ Descricao: Sem Remorso (também conhecido como Tom Clancy's Without Remorse) é 
 
 
 Pressione qualquer tecla e retorne ao menu
+```
 
 ### Estrutura de dados
 
